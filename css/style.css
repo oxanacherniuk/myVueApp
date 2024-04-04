@@ -214,7 +214,7 @@ i.fa-star {
     background-position: 40%;
 }
 .app.results[data-race="infested"] {
-    background-image: url(../img/infested_bg.jpg);
+    background-image: url(../img/infested_bg.png);
 }
 .app.results[data-race="protoss"] {
     background-image: url(../img/protoss_bg.jpg);

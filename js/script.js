@@ -163,25 +163,3 @@ let app = new Vue({
         }
     }
 })
-
-let audio = new Audio('audio/mix.mp3')
-let audio_btn = document.querySelector('.btn__sound')
-let audio_icon = document.querySelector('.btn__sound i')
-
-audio.muted = true;
-audio.volume = 0.3
-
-audio_btn.addEventListener('click', function(){
-    if(audio.muted) {
-        audio.muted=false
-        audio.currentTime = Math.random() * (audio.duration + 1)
-        audio.play()
-        audio_icon.classList.add('fa-volume-up')
-        audio_icon.classList.remove('fa-volume-off')
-    }else if(!audio.muted) {
-        audio.muted=true
-        audio.pause()
-        audio_icon.classList.add('fa-volume-off')
-        audio_icon.classList.remove('fa-volume-up')
-    }
-})
